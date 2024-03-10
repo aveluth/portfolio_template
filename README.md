@@ -1,6 +1,6 @@
 # Personal Website Template
 
-This repository contains a template for a personal portfolio website built using HTML, CSS, and Bootstrap. Ideal for researchers or students who want to show case their work. It includes multiple pages such as home, publications, and resume, along with styling for a responsive design. This is a very minimalistic design created by [a non-expert](www.aveluth.de). 
+This repository contains a template for a personal portfolio website built using HTML, CSS, and Bootstrap. Ideal for researchers or students who want to show case their work. It includes multiple pages such as home, publications, and resume, along with styling for a responsive design. This is a very minimalistic design created by [a non-expert](https://aveluth.de/). 
 
 ## Set-up
 
