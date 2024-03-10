@@ -1,0 +1,429 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.container-fluid {
+    min-height: 85vh;
+    display: flex;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.navbar {
+    background-color: #808080; /* Generic grey color */
+}
+
+/* Change the color of nav items */
+.navbar-nav .nav-link {
+    color: #ffffff;
+    /* White color */
+}
+
+.navbar-nav {
+    width: 1000px;
+    /* Adjust the width as needed */
+    background-color: #808080; /* Generic grey color */
+}
+
+.navbar-nav .nav-item {
+    margin: 10px;
+    background-color: #808080; /* Generic grey color */
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+}
+
+.container-fluid .bg-secondary {
+    background-color: #ccc !important;
+    /* Use !important to override Bootstrap */
+}
+
+.main-content {
+    padding: 20px;
+    flex: 3;
+    position: relative;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.5);
+    z-index: -1;
+}
+
+/* Custom CSS */
+.about-me {
+    position: relative;
+}
+
+/* Personal Info Styles */
+.personal-info h2 {
+    margin-top: 0;
+}
+
+/* CSS for Personal Details in Dark Mode */
+.dark-theme .personal-details {
+    background-color: #333;
+    /* Dark grey background */
+    color: #fff;
+    /* White text */
+}
+
+/* Navigation Styles */
+.tabs ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs ul li {
+    margin-bottom: 10px;
+}
+
+.tabs ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.tabs ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Add these CSS rules to the end of your existing styles.css file */
+
+body.publications-page .container-fluid {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+}
+
+body.publications-page .main-content {
+    padding: 30px;
+    margin: 50px auto;
+}
+
+body.publications-page .bg-secondary {
+    background-color: #f4f4f4 !important;
+}
+
+body.publications-page .publications {
+    text-align: left;
+}
+
+body.publications-page .publication-list {
+    list-style: none;
+    padding: 0;
+}
+
+body.publications-page .publication {
+    margin-bottom: 50px;
+    /* Increased space between publications */
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.6;
+}
+
+body.publications-page .bullet {
+    position: absolute;
+    left: -15px;
+    /* Adjusted left position */
+    top: 15px;
+    /* Adjusted top position */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    /* Changed to border-top */
+    border-bottom: 10px solid transparent;
+    /* Changed to border-bottom */
+    border-right: 15px solid #808080;
+    /* Generic grey color; Changed to border-right */
+    transform: rotate(-180deg);
+    /* Rotated triangle */
+}
+
+.profile-image {
+    width: 200px;
+    /* Adjust the width to make the circle bigger */
+    height: 200px;
+    /* Adjust the height to make the circle bigger */
+    border: 3px solid #808080;
+    /* Generic grey border color */
+    border-radius: 50%;
+    /* Make it a circle */
+    overflow: hidden;
+    /* Hide overflowing parts of the text */
+    margin: 0 auto 20px;
+    /* Center the text and add margin below */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-text {
+    width: 100%;
+    /* Adjust the width to make the circle bigger */
+    height: auto;
+    /* Allow the height to adjust automatically */
+    border-radius: 50%;
+    /* Ensure the border-radius is set to 50% for a perfect circle */
+    border: 2px solid #000;
+    /* Add a border around the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.circle-text img {
+    max-width: 180%;
+    /* Ensure the image fits within the circle */
+    max-height: 180%;
+    /* Ensure the image fits within the circle */
+}
+
+.contact-info,
+.social-icons {
+    list-style: none;
+    padding-left: 140px;
+    /* Add left padding to move the contents to the right */
+    text-align: left;
+    /* Align the list items to the left */
+}
+
+.contact-info li,
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.contact-info li i,
+.social-icons li i {
+    margin-right: 5px;
+    /* Add some spacing between icon and text */
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+    /* Remove margin from the last item */
+}
+
+.social-icons li .social-link {
+    text-decoration: none;
+    /* Remove underline from social media links */
+    color: #333;
+    /* Set the color for social media links */
+}
+
+.resume-page .container-fluid {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 1100px;
+    /* Limit maximum width */
+    position: relative;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    /* Adjust the left padding for space */
+}
+
+.section ul li::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    /* Adjust the left position for alignment */
+    top: 10px;
+    /* Align the arrow to the top */
+    transform: translateY(-50%) rotate(180deg);
+    /* Rotate the arrow */
+    border-style: solid;
+    border-width: 5px 8px 5px 0;
+    /* Adjust arrow size */
+    border-color: transparent orange transparent transparent;
+}
+
+/* CSS for Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.header-image {
+    width: 100%;
+    height: 3cm;
+    /* Adjust as needed */
+    object-fit: cover;
+    /* This ensures the image covers the entire container */
+    margin: 0;
+    /* Reset margin */
+    padding: 0;
+    /* Reset padding */
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Adjust navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+/* Adjust padding and margins for smaller screens */
+@media (max-width: 576px) {
+    .sidebar,
+    .main-content {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Optimize font sizes for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .section {
+        max-width: 100%;
+    }
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 576px) {
+    .tabs ul li {
+        margin-bottom: 5px;
+    }
+
+    .contact-info,
+    .social-icons {
+        padding-left: 0;
+    }
+}
+
+/* Other adjustments for smaller screens */
+@media (max-width: 576px) {
+    /* Add your specific adjustments here */
+}
+
+.content-box {
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+element {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
